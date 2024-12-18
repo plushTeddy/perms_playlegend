@@ -1,0 +1,36 @@
+name: permissions
+version: '1.0'
+main: dev.plushteddy.perms.Main
+api-version: '1.21'
+commands:
+  permissions:
+    description: Add or remove a permission to a player.
+  group:
+    description: Add, remove, create, delete or edit a group.
+  me:
+    description: Shows information's about you and other players.
+permissions:
+  perms.group_create:
+    description: Allows the creation of a new group.
+    default: op
+  perms.group_add:
+    description: Allows you to add a group to a player.
+    default: op
+  perms.group_edit:
+    description: Allows you to edit a group.
+    default: op
+  perms.group_remove:
+    description: Allows you to remove a group to a player.
+    default: op
+  perms.group_delete:
+    description: Allows the deletion of a group.
+    default: op
+  perms.me_player:
+    description: Allows you to check information's about other players.
+    default: op
+  perms.perms_add:
+    description: Allows you to add a permission to a player.
+    default: op
+  perms.perms_remove:
+    description: Allows you to remove a permission from a player.
+    default: op

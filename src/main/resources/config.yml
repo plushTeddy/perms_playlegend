@@ -1,0 +1,12 @@
+database:
+  url: "localhost"
+  database: "minecraft"
+  user: "x"
+  password: "x"
+  port: 3306
+
+
+prefix: true
+
+
+language: "en_GB"

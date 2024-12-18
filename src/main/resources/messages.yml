@@ -1,0 +1,167 @@
+en_GB:
+  welcome: "Welcome on the server {{player}}"
+  prefix: "[Permissions]"
+  noPermission: "You do not have the permission to do that: {{permission}}"
+  error: "Sorry but there was an internal error."
+  permissions:
+    usage: "/permissions <add/remove> <player> <permission>"
+    unknownAction: "Sorry but this action is unknown."
+    playerNotFound: "I could not find this player."
+    add:
+      usage: "/permissions add <player> <permission> <time>"
+      invalidTime: "The given time is not valid."
+      alreadyHasPermission: "This player already has the given permission."
+      success: "The given permission was successfully added to the given player."
+    remove:
+      usage: "/permissions remove <player> <permission>"
+      notFound: "The given player does not have the given permission."
+      success: "The given permission was successfully removed from the given player."
+  group:
+    usage: "/group <add/remove/edit/create/delete>"
+    unknownAction: "Sorry but this action is unknown."
+    notFound: "The given group does not exist."
+    edit:
+      usage: "/group edit <name/prefix/weight/addperm/removeperm>"
+      invalidAction: "Sorry but this action is unknown."
+      name:
+        default: "You can not rename the default group."
+        usage: "/group edit name <group> <new name>"
+        exists: "The given name does already exist."
+        success: "The given group was successfully renamed."
+      prefix:
+        usage: "/group edit prefix <group> <new prefix>"
+        success: "The prefix of the given group was successfully changed."
+      weight:
+        default: "You can not change the weight of the default group."
+        usage: "/group edit weight <group> <weight>"
+        invalid: "The given weight is not valid."
+        exists: "The given weight does already exist."
+        success: "The weight of the given group was successfully changed."
+      addperm:
+        usage: "/group edit addperm <group> <permission>"
+        exists: "The given group already has the given permission."
+        success: "The given permission was successfully added to the given group."
+      removeperm:
+        usage: "/group edit removeperm <group> <permission>"
+        notExists: "The given group does not have the given permission."
+        success: "The given permission was successfully removed from the given group."
+    add:
+      usage: "/group add <player> <group> <time>"
+      invalidTime: "The given time is not valid."
+      playerNotFound: "The given player does not exist."
+      groupNotFound: "The given group does not exist."
+      alreadyInGroup: "The given player already has the given group."
+      success: "The given group was successfully added to the given player."
+    remove:
+      usage: "/group remove <player> <group>"
+      default: "You can not remove the default group from a player."
+      playerNotFound: "The given player does not exist."
+      groupNotFound: "The given group does not exist."
+      notInGroup: "The given player is not in the given group."
+      success: "The given group was successfully removed from the given player."
+    delete:
+      usage: "/group delete <group>"
+      cannotDeleteDefault: "You can not delete the default group."
+      groupNotFound: "The given group does not exist."
+      success: "The given group was successfully deleted."
+    create:
+      usage: "/group create <name> <weight> <prefix>"
+      invalidWeight: "The given weight is not valid."
+      groupExists: "A group with the given name does already exist."
+      weightExists: "A group with the given weight does already exist."
+      success: "The given group was successfully created."
+  me:
+    playerNotFound: "The given player does not exist."
+    shouldBePlayer: "You need to be a player to perform this command."
+    usage: "/me <player (optional)>"
+    permissionsListTitle-: "Permissions:"
+    permanent-: "Permanent"
+    list-: "{{thing}} - Time until removal: {{expiry}}"
+    groupsListTitle-: "Groups:"
+    noPermsOrGroups: "The given player is not in a group or dos not have any special permissions."
+    expired-: "Expired"
+    timeLeft-: "{{days}} Day(s), {{hours}} Hour(s), {{minutes}} Minute(s), {{seconds}} Second(s)"
+
+de_DE:
+  welcome: "Willkommen auf dem Server {{player}}"
+  prefix: "[Permissions]"
+  noPermission: "Du hast keine Berechtigung dafür: {{permission}}"
+  error: "Entschuldigung, aber es gab einen internen Fehler."
+  permissions:
+    usage: "/permissions <add/remove> <spieler> <berechtigung>"
+    unknownAction: "Entschuldigung, aber diese Aktion ist unbekannt."
+    playerNotFound: "Ich konnte diesen Spieler nicht finden."
+    add:
+      usage: "/permissions add <spieler> <berechtigung> <zeit>"
+      invalidTime: "Die angegebene Zeit ist ungültig."
+      alreadyHasPermission: "Dieser Spieler hat die angegebene Berechtigung bereits."
+      success: "Die angegebene Berechtigung wurde dem Spieler erfolgreich hinzugefügt."
+    remove:
+      usage: "/permissions remove <spieler> <berechtigung>"
+      notFound: "Der angegebene Spieler hat diese Berechtigung nicht."
+      success: "Die angegebene Berechtigung wurde dem Spieler erfolgreich entfernt."
+  group:
+    usage: "/group <add/remove/edit/create/delete>"
+    unknownAction: "Entschuldigung, aber diese Aktion ist unbekannt."
+    notFound: "Die angegebene Gruppe existiert nicht."
+    edit:
+      usage: "/group edit <name/prefix/weight/addperm/removeperm>"
+      invalidAction: "Entschuldigung, aber diese Aktion ist unbekannt."
+      name:
+        default: "Du kannst die Standardgruppe nicht umbenennen."
+        usage: "/group edit name <gruppe> <neuer name>"
+        exists: "Der angegebene Name existiert bereits."
+        success: "Die angegebene Gruppe wurde erfolgreich umbenannt."
+      prefix:
+        usage: "/group edit prefix <gruppe> <neues prefix>"
+        success: "Das Präfix der angegebenen Gruppe wurde erfolgreich geändert."
+      weight:
+        default: "Du kannst das Gewicht der Standardgruppe nicht ändern."
+        usage: "/group edit weight <gruppe> <gewicht>"
+        invalid: "Das angegebene Gewicht ist ungültig."
+        exists: "Das angegebene Gewicht existiert bereits."
+        success: "Das Gewicht der angegebenen Gruppe wurde erfolgreich geändert."
+      addperm:
+        usage: "/group edit addperm <gruppe> <berechtigung>"
+        exists: "Die angegebene Gruppe hat die Berechtigung bereits."
+        success: "Die angegebene Berechtigung wurde der Gruppe erfolgreich hinzugefügt."
+      removeperm:
+        usage: "/group edit removeperm <gruppe> <berechtigung>"
+        notExists: "Die angegebene Gruppe hat diese Berechtigung nicht."
+        success: "Die angegebene Berechtigung wurde aus der Gruppe erfolgreich entfernt."
+    add:
+      usage: "/group add <spieler> <gruppe> <zeit>"
+      invalidTime: "Die angegebene Zeit ist ungültig."
+      playerNotFound: "Der angegebene Spieler existiert nicht."
+      groupNotFound: "Die angegebene Gruppe existiert nicht."
+      alreadyInGroup: "Der angegebene Spieler ist bereits in dieser Gruppe."
+      success: "Die angegebene Gruppe wurde dem Spieler erfolgreich hinzugefügt."
+    remove:
+      usage: "/group remove <spieler> <gruppe>"
+      default: "Du kannst die Standardgruppe eines Spielers nicht entfernen."
+      playerNotFound: "Der angegebene Spieler existiert nicht."
+      groupNotFound: "Die angegebene Gruppe existiert nicht."
+      notInGroup: "Der angegebene Spieler ist nicht in der angegebenen Gruppe."
+      success: "Die angegebene Gruppe wurde vom Spieler erfolgreich entfernt."
+    delete:
+      usage: "/group delete <gruppe>"
+      cannotDeleteDefault: "Du kannst die Standardgruppe nicht löschen."
+      groupNotFound: "Die angegebene Gruppe existiert nicht."
+      success: "Die angegebene Gruppe wurde erfolgreich gelöscht."
+    create:
+      usage: "/group create <name> <gewicht> <prefix>"
+      invalidWeight: "Das angegebene Gewicht ist ungültig."
+      groupExists: "Eine Gruppe mit diesem Namen existiert bereits."
+      weightExists: "Eine Gruppe mit diesem Gewicht existiert bereits."
+      success: "Die angegebene Gruppe wurde erfolgreich erstellt."
+  me:
+    playerNotFound: "Der angegebene Spieler existiert nicht."
+    shouldBePlayer: "Du musst ein Spieler sein, um diesen Befehl auszuführen."
+    usage: "/me <spieler (optional)>"
+    permissionsListTitle-: "Berechtigungen:"
+    permanent-: "Dauerhaft"
+    list-: "{{thing}} - Zeit bis zur Entfernung: {{expiry}}"
+    groupsListTitle-: "Gruppen:"
+    noPermsOrGroups: "Der angegebene Spieler ist in keiner Gruppe und hat keine speziellen Berechtigungen."
+    expired-: "Abgelaufen"
+    timeLeft-: "{{days}} Tag(e), {{hours}} Stunde(n), {{minutes}} Minute(n), {{seconds}} Sekunde(n)"
