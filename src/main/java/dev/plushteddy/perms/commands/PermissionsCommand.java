@@ -164,18 +164,18 @@ public class PermissionsCommand implements CommandExecutor, TabCompleter {
 
     @Override
     public List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, String[] args) {
-        List<String> suggestions = new ArrayList<>();
+        List<String> completions = new ArrayList<>();
 
         if (args.length == 1) {
-            suggestions.add("add");
-            suggestions.add("remove");
+            completions.add("add");
+            completions.add("remove");
         } else if (args.length == 2 && (args[0].equalsIgnoreCase("add") || args[0].equalsIgnoreCase("remove"))) {
             for (Player player : Bukkit.getOnlinePlayers()) {
                 if (player.getName().toLowerCase().startsWith(args[1].toLowerCase())) {
-                    suggestions.add(player.getName());
+                    completions.add(player.getName());
                 }
             }
         }
-        return suggestions;
+        return completions;
     }
 }

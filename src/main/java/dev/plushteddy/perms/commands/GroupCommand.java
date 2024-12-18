@@ -567,10 +567,4 @@ public class GroupCommand implements CommandExecutor, TabCompleter {
 
         return prefixes;
     }
-
-
-
-
-
-
 }
